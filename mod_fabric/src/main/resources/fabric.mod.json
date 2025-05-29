@@ -1,0 +1,39 @@
+{
+	"schemaVersion": 1,
+	"id": "pause_music_on_pause",
+	"version": "${version}",
+	"name": "Pause Music on Pause",
+	"description": "Pauses the music when the game is paused.",
+	"authors": [
+		"Ennui Langeweile"
+	],
+	"contact": {
+		"homepage": "https://modrinth.com/mod/pause-music-on-pause",
+		"issues": "https://github.com/Up-Mods/PauseMusicOnPause/issues",
+		"sources": "https://github.com/Up-Mods/PauseMusicOnPause"
+	},
+	"icon": "assets/pause_music_on_pause/icon.png",
+	"environment": "client",
+	"entrypoints": {},
+	"mixins": [
+		"pause_music_on_pause.mixins.json"
+	],
+	"accessWidener": "pause_music_on_pause.accesswidener",
+	"depends": {
+		"fabricloader": ">=0.16.14",
+		"minecraft": ">=1.21.6-"
+	},
+	"custom": {
+		"mc-publish": {
+			"modrinth": "QToRw9Me",
+			"curseforge": "1276431",
+			"loaders": [
+				"fabric",
+				"quilt"
+			],
+			"dependencies": [
+				"fabric-api(optional){curseforge:306612}{modrinth:P7dR8mSH}"
+			]
+		}
+	}
+}

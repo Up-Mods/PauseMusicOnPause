@@ -1,0 +1,35 @@
+modLoader = "javafml"
+loaderVersion = "*"
+license = "All rights reserved"
+
+[[mixins]]
+config = "pause_music_on_pause.mixins.json"
+
+[[mods]]
+modId = "pause_music_on_pause"
+version = "${version}"
+displayName = "Pause Music on Pause"
+logoFile = "icon.png"
+authors = "Ennui Langeweile and Up"
+description = """
+Pauses the music while the game is paused, restoring the previous behavior to Minecraft 1.21.6 and above.
+"""
+
+[[dependencies.pause_music_on_pause]]
+modId = "neoforge"
+type = "required"
+versionRange = "[21.6.0-beta,)"
+ordering = "NONE"
+side = "CLIENT"
+
+[[dependencies.pause_music_on_pause]]
+modId = "minecraft"
+type = "required"
+versionRange = "[1.21.6,1.22)"
+ordering = "NONE"
+side = "CLIENT"
+
+[mc-publish]
+modrinth = "QToRw9Me"
+curseforge = "1276431"
+loaders = [ "neoforge" ]

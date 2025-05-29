@@ -1,0 +1,17 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "page.langeweile.pause_music_on_pause.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "client": [
+    "MinecraftMixin",
+    "OptionsMixin",
+    "SoundOptionsScreenMixin",
+    "details.MusicManagerMixin",
+    "details.SoundEngineMixin",
+    "details.SoundManagerMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
