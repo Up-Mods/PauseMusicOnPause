@@ -13,7 +13,7 @@ java {
 }
 
 project.version = System.getenv("TAG") ?: "0.0.0-development"
-project.group = "io.github.ennuil.crooked_crooks"
+project.group = "page.langeweile.pause_music_on_pause"
 
 tasks.withType<JavaCompile> {
 	options.release = 21
