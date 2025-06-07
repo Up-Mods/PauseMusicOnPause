@@ -18,14 +18,14 @@ Pauses the music while the game is paused, restoring the previous behavior to Mi
 [[dependencies.pause_music_on_pause]]
 modId = "neoforge"
 type = "required"
-versionRange = "[21.6.0-beta,)"
+versionRange = "[21.5.0-alpha,)"
 ordering = "NONE"
 side = "CLIENT"
 
 [[dependencies.pause_music_on_pause]]
 modId = "minecraft"
 type = "required"
-versionRange = "[1.21.6,1.22)"
+versionRange = "[1.21.6,)"
 ordering = "NONE"
 side = "CLIENT"
 

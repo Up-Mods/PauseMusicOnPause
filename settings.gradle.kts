@@ -7,4 +7,4 @@ pluginManagement {
 	}
 }
 
-include("mod_common", "mod_fabric")
+include("mod_common", "mod_fabric", "mod_norge")

@@ -5,6 +5,15 @@ plugins {
 
 base.archivesName = "pause_music_on_pause-neo"
 
+repositories {
+	maven {
+		setUrl("https://prmaven.neoforged.net/NeoForge/pr2297")
+		content {
+			includeModule("net.neoforged", "neoforge")
+		}
+	}
+}
+
 neoForge {
 	version = libs.versions.neoforge.get()
 
@@ -25,6 +34,10 @@ neoForge {
 			sourceSet(sourceSets.main.get())
 		}
 	}
+
+	accessTransformers {
+		file("src/main/resources/boring_default_game_rules.accesswidener")
+	}
 }
 
 tasks.named<ProcessResources>("processResources").configure {
@@ -33,5 +46,9 @@ tasks.named<ProcessResources>("processResources").configure {
 
 	filesMatching("META-INF/neoforge.mods.toml") {
 		expand("version" to version)
+	}
+
+	filesMatching("src/main/resources/boring_default_game_rules.accesswidener") {
+		exclude()
 	}
 }
