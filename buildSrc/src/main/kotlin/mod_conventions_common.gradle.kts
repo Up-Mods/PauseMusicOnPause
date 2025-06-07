@@ -3,6 +3,9 @@ plugins {
 	id("maven-publish")
 }
 
+// Target Java version since Minecraft 1.20.6 (24w14a)
+val javaVersion = 21
+
 repositories {
 	maven("https://maven.parchmentmc.org")
 }
@@ -10,13 +13,17 @@ repositories {
 java {
 	withSourcesJar()
 	// TODO - Resurrect the version getter method
+
+	toolchain {
+		languageVersion = JavaLanguageVersion.of(javaVersion)
+	}
 }
 
 project.version = System.getenv("TAG") ?: "0.0.0-development"
 project.group = "page.langeweile.pause_music_on_pause"
 
-tasks.withType<JavaCompile> {
-	options.release = 21
+tasks.withType<JavaCompile>().configureEach {
+	options.release = javaVersion
 }
 
 tasks.named<Jar>("jar").configure {
