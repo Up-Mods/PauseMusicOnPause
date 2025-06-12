@@ -1,16 +1,14 @@
 # The latest versions are available at https://quiltmc.org/en/usage/latest-versions/
 [versions]
-minecraft = "1.21.6-pre1"
+minecraft = "1.21.6-pre4"
 parchment = "2025.04.19"
 
 fabric_loom = "1.10.5"
 fabric_loader = "0.16.14"
-moddevgradle = "2.0.89"
-neoforge = "21.5.0-alpha.1.21.6-pre3.20250606.211300"
+moddevgradle = "2.0.92"
+neoforge = "21.5.0-alpha.1.21.6-pre4.20250611.162051"
 
-fabric_api = "0.125.2+1.21.6"
-
-modmenu = "14.0.0-rc.2"
+fabric_api = "0.126.1+1.21.6"
 
 [libraries]
 minecraft = { module = "com.mojang:minecraft", version.ref = "minecraft" }
@@ -18,8 +16,6 @@ parchment = { module = "org.parchmentmc.data:parchment-1.21.5", version.ref = "p
 fabric_loader = { module = "net.fabricmc:fabric-loader", version.ref = "fabric_loader" }
 
 fabric_api = { module = "net.fabricmc.fabric-api:fabric-api", version.ref = "fabric_api" }
-
-modmenu = { module = "com.terraformersmc:modmenu", version.ref = "modmenu" }
 
 # If you have multiple similar dependencies, you can declare a dependency bundle and reference it on the build script with "libs.bundles.example".
 [bundles]
