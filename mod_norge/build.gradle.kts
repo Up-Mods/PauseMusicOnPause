@@ -34,10 +34,6 @@ neoForge {
 			sourceSet(sourceSets.main.get())
 		}
 	}
-
-	accessTransformers {
-		file("src/main/resources/boring_default_game_rules.accesswidener")
-	}
 }
 
 tasks.named<ProcessResources>("processResources").configure {
@@ -48,7 +44,5 @@ tasks.named<ProcessResources>("processResources").configure {
 		expand("version" to version)
 	}
 
-	filesMatching("src/main/resources/boring_default_game_rules.accesswidener") {
-		exclude()
-	}
+	exclude("pause_music_on_pause.accesswidener")
 }
