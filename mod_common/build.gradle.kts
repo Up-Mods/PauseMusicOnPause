@@ -6,10 +6,7 @@ plugins {
 dependencies {
 	minecraft(libs.minecraft)
 
-	mappings(loom.layered {
-		officialMojangMappings()
-		parchment(libs.parchment)
-	})
+	mappings(loom.officialMojangMappings())
 	modImplementation(libs.fabric.loader)
 }
 
@@ -17,16 +14,6 @@ loom {
 	mods {
 		register("pause_music_on_pause") {
 			sourceSet("main")
-		}
-	}
-
-	mixin {
-		useLegacyMixinAp = false
-	}
-
-	fabricApi {
-		configureDataGeneration {
-			client = true
 		}
 	}
 

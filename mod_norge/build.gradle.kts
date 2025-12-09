@@ -17,12 +17,6 @@ repositories {
 neoForge {
 	version = libs.versions.neoforge.get()
 
-	parchment {
-		//minecraftVersion = libs.versions.minecraft
-		minecraftVersion = "1.21.5"
-		mappingsVersion = libs.versions.parchment
-	}
-
 	runs {
 		register("client") {
 			client()

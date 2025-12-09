@@ -25,7 +25,7 @@ side = "CLIENT"
 [[dependencies.pause_music_on_pause]]
 modId = "minecraft"
 type = "required"
-versionRange = "[1.21.6,)"
+versionRange = "[1.21.6,25.1)"
 ordering = "NONE"
 side = "CLIENT"
 

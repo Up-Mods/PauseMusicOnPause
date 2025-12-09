@@ -10,10 +10,7 @@ repositories {}
 dependencies {
 	minecraft(libs.minecraft)
 
-	mappings(loom.layered {
-		officialMojangMappings()
-		parchment(libs.parchment)
-	})
+	mappings(loom.officialMojangMappings())
 	modImplementation(libs.fabric.loader)
 
 	modImplementation(libs.fabric.api)
@@ -24,10 +21,6 @@ loom {
 		register("pause_music_on_pause") {
 			sourceSet("main")
 		}
-	}
-
-	mixin {
-		useLegacyMixinAp = false
 	}
 
 	runs {
