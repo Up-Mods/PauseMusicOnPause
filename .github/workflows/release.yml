@@ -4,6 +4,9 @@ on:
     tags:
       - '*'
 
+env:
+  TAG: ${{ github.ref_name }}
+
 jobs:
   publish:
     runs-on: ubuntu-24.04
@@ -37,6 +40,8 @@ jobs:
       - name: Publish on mod platforms
         env:
           GITHUB_TOKEN: ${{ github.token }}
+          MODRINTH_API_TOKEN: ${{ secrets.MODRINTH_TOKEN }}
+          CURSEFORGE_API_TOKEN: ${{ secrets.CURSEFORGE_TOKEN }}
         run: ./gradlew publishMods
 
       - name: Notify Discord

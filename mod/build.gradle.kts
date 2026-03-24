@@ -62,6 +62,16 @@ publishMods {
 		repository = "Up-Mods/PauseMusicOnPause"
 		commitish = "main"
 	}
+
+	modrinth {
+		accessToken = providers.environmentVariable("MODRINTH_API_KEY")
+		projectId = "QToRw9Me"
+	}
+
+	curseforge {
+		accessToken = providers.environmentVariable("CURSEFORGE_API_KEY")
+		projectId = "1276431"
+	}
 }
 
 publishing {

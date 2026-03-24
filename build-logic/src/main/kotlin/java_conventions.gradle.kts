@@ -2,7 +2,7 @@ plugins {
 	id("java-library")
 }
 
-// Target Java version since Minecraft 21.6 (21.6-snapshot-1)
+// Target Java version since Minecraft 26.1 (26.1-snapshot-1)
 val javaVersion = 25
 
 java {

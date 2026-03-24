@@ -23,11 +23,7 @@ public abstract class MusicManagerMixin {
 			@At(
 				value = "INVOKE",
 				target = "Lnet/minecraft/client/sounds/MusicManager;startPlaying(Lnet/minecraft/sounds/Music;)V"
-			),
-			@At(
-				value = "INVOKE",
-				target = "Lnet/minecraft/client/sounds/MusicManager;startPlaying(Lnet/minecraft/client/sounds/MusicInfo;)V"
-			),
+			)
 		},
 		allow = 1
 	)
