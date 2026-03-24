@@ -2,7 +2,7 @@
   "required": true,
   "minVersion": "0.8",
   "package": "page.langeweile.pause_music_on_pause.mixin",
-  "compatibilityLevel": "JAVA_21",
+  "compatibilityLevel": "JAVA_25",
   "client": [
     "MinecraftMixin",
     "OptionsMixin",
