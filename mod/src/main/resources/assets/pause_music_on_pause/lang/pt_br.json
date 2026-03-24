@@ -1,3 +1,5 @@
 {
+  "fml.menu.mods.info.description.pause_music_on_pause": "Pausa a música quando o jogo é pausado.",
+  "modmenu.descriptionTranslation.pause_music_on_pause": "Pausa a música quando o jogo é pausado.",
   "options.pause_music_on_pause": "Pausar música ao pausar"
 }
