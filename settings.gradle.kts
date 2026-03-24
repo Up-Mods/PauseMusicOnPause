@@ -2,9 +2,11 @@ rootProject.name = "pause_music_on_pause"
 
 pluginManagement {
 	repositories {
-		maven(uri("https://maven.fabricmc.net/"))
+		maven("https://maven.fabricmc.net/")
 		gradlePluginPortal()
 	}
+
+	includeBuild("build-logic")
 }
 
-include("mod_common", "mod_fabric", "mod_norge")
+include("mod", "test_norge")

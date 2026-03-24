@@ -18,22 +18,9 @@
 	"mixins": [
 		"pause_music_on_pause.mixins.json"
 	],
-	"accessWidener": "pause_music_on_pause.accesswidener",
+	"accessWidener": "pause_music_on_pause.classtweaker",
 	"depends": {
-		"fabricloader": ">=0.16.14",
-		"minecraft": ">=1.21.6- <25.1.0-"
-	},
-	"custom": {
-		"mc-publish": {
-			"modrinth": "QToRw9Me",
-			"curseforge": "1276431",
-			"loaders": [
-				"fabric",
-				"quilt"
-			],
-			"dependencies": [
-				"fabric-api(optional){curseforge:306612}{modrinth:P7dR8mSH}"
-			]
-		}
+		"fabricloader": ">=0.18.3",
+		"minecraft": ">=26.1.0-"
 	}
 }
