@@ -52,6 +52,7 @@ tasks.named<Jar>("jar").configure {
 }
 
 publishMods {
+	displayName.set("${version.get()} (Fabric/NeoForge)")
 	file = tasks.named<Jar>("jar").get().archiveFile
 	modLoaders = listOf("fabric", "neoforge")
 	changelog = "To Be Updated"
