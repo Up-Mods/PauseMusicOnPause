@@ -5,7 +5,7 @@ plugins {
 	`maven-publish`
 }
 
-project.version = System.getenv("TAG") ?: "0.0.0-development"
+project.version = System.getenv("TAG") ?: "0.0.0"
 project.group = "page.langeweile"
 
 base.archivesName = "pause_music_on_pause"

@@ -14,13 +14,3 @@ java {
 tasks.withType<JavaCompile>().configureEach {
 	options.release = javaVersion
 }
-
-tasks.named<Jar>("jar").configure {
-	val name = project.name
-	inputs.files("LICENSE.md")
-	inputs.property("name", name)
-
-	from("LICENSE.md") {
-		rename { "LICENSE_${name}.md" }
-	}
-}

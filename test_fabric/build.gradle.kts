@@ -16,10 +16,10 @@ dependencies {
 loom {
 	runs {
 		named("client") {
-			name("Test")
 			client()
-			ideConfigGenerated(true)
-			runDir("run")
+			displayName = "Fabric Client"
+			generateRunConfig = true
+			runDirectory = projectDir.resolve("run")
 		}
 	}
 }
