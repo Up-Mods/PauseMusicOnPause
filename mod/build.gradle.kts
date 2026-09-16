@@ -57,20 +57,27 @@ publishMods {
 	changelog = "To Be Updated"
 	type = STABLE
 
+	/*
 	github {
 		accessToken = providers.environmentVariable("GITHUB_TOKEN")
 		repository = "Up-Mods/PauseMusicOnPause"
-		commitish = "main"
+		commitish = providers.environmentVariable("TAG")
 	}
+	 */
 
 	modrinth {
-		accessToken = providers.environmentVariable("MODRINTH_API_KEY")
+		accessToken = providers.environmentVariable("MODRINTH_TOKEN")
 		projectId = "QToRw9Me"
+		minecraftVersions.addAll("26.1", "26.1.1", "26.1.2")
 	}
 
 	curseforge {
-		accessToken = providers.environmentVariable("CURSEFORGE_API_KEY")
+		accessToken = providers.environmentVariable("CURSEFORGE_TOKEN")
 		projectId = "1276431"
+		minecraftVersions.addAll("26.1", "26.1.1", "26.1.2")
+		javaVersions.add(JavaVersion.VERSION_25)
+		client = true
+		changelogType = "markdown"
 	}
 }
 
