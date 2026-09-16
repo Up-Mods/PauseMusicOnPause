@@ -57,13 +57,11 @@ publishMods {
 	changelog = "To Be Updated"
 	type = STABLE
 
-	/*
 	github {
 		accessToken = providers.environmentVariable("GITHUB_TOKEN")
 		repository = "Up-Mods/PauseMusicOnPause"
 		commitish = providers.environmentVariable("TAG")
 	}
-	 */
 
 	modrinth {
 		accessToken = providers.environmentVariable("MODRINTH_TOKEN")
