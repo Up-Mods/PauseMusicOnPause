@@ -5,7 +5,7 @@ plugins {
 	`maven-publish`
 }
 
-project.version = System.getenv("TAG") ?: "0.0.0-development"
+project.version = System.getenv("TAG") ?: "0.0.0"
 project.group = "page.langeweile"
 
 base.archivesName = "pause_music_on_pause"
@@ -60,17 +60,22 @@ publishMods {
 	github {
 		accessToken = providers.environmentVariable("GITHUB_TOKEN")
 		repository = "Up-Mods/PauseMusicOnPause"
-		commitish = "main"
+		commitish = providers.environmentVariable("TAG")
 	}
 
 	modrinth {
-		accessToken = providers.environmentVariable("MODRINTH_API_KEY")
+		accessToken = providers.environmentVariable("MODRINTH_TOKEN")
 		projectId = "QToRw9Me"
+		minecraftVersions.addAll("26.2", "26.3")
 	}
 
 	curseforge {
-		accessToken = providers.environmentVariable("CURSEFORGE_API_KEY")
+		accessToken = providers.environmentVariable("CURSEFORGE_TOKEN")
 		projectId = "1276431"
+		minecraftVersions.addAll("26.2", "26.3")
+		javaVersions.add(JavaVersion.VERSION_25)
+		client = true
+		changelogType = "markdown"
 	}
 }
 

@@ -9,4 +9,4 @@ pluginManagement {
 	includeBuild("build-logic")
 }
 
-include("mod", "test_norge")
+include("mod", "test_fabric", "test_norge")
